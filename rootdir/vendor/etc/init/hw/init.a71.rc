@@ -118,7 +118,7 @@ on post-fs-data
     chmod 0660 /efs/tas25xx/amb_temp
 
 # Samsung Pay
-    mkdir /efs/pfw_data 0760 vendor_spay vendor_spay
+    mkdir /efs/pfw_data 0760 system system
 
 # Create carrier folder for HiddenMenu
 on post-fs
@@ -127,7 +127,7 @@ on post-fs
     chown radio system /efs/carrier/HiddenMenu
 
 # MST/NFC Switch
-    chown vendor_spay system /dev/mst_ctrl
+    chown system system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl    
 
 # Fingerprint sensor
