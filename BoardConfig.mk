@@ -40,6 +40,9 @@ TARGET_KERNEL_CONFIG := a71_defconfig
 BOARD_DTB_OFFSET := 0x01F00000
 BOARD_MKBOOTIMG_ARGS := --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2023-08-01
 
