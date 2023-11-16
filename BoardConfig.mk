@@ -21,6 +21,13 @@ DEVICE_PATH := device/samsung/a71
 # Assert
 TARGET_OTA_ASSERT_DEVICE := a71
 
+# Camera
+SOONG_CONFIG_NAMESPACES += samsung_sm6150CameraVars
+SOONG_CONFIG_samsung_sm6150CameraVars += \
+    samsung_sm6150_model
+
+SOONG_CONFIG_samsung_sm6150CameraVars_samsung_sm6150_model := $(TARGET_DEVICE)
+
 # Board
 TARGET_BOARD_NAME := SRPSF18B010
 
