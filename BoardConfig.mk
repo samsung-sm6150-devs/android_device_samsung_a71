@@ -43,5 +43,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2023-08-01
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Get non-open-source specific aspects
 include vendor/samsung/a71/BoardConfigVendor.mk
