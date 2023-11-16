@@ -43,7 +43,6 @@ $(call inherit-product, device/samsung/sm6150-common/sm6150.mk)
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
