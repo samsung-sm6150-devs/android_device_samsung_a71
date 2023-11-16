@@ -36,6 +36,10 @@ $(call inherit-product, device/samsung/sm6150-common/sm6150.mk)
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.a71.rc \
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
