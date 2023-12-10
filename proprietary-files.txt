@@ -474,6 +474,10 @@ vendor/lib64/libvdis_core.so
 vendor/lib64/libvdis_interface.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
+# Camera legacy (prebuilt) - From A13
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so|efd592cbdf0150ef94bfb6bab4e835ec45b3cf24
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|6224f1fe991d3f632ead667244e7c91b518d33ce
+
 # Fingerprint
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
